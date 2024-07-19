@@ -1,22 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <EstudiantePage /> -->
+  <!-- <EstudianteEliminar /> -->
+  <EstudianteGuardar />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import EstudiantePage from "./pages/EstudiantePage.vue";
+// import EstudianteEliminar from "./pages/EstudianteEliminar.vue";
+import EstudianteGuardar from "./pages/EstudianteGuardar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    // EstudiantePage,
+    // EstudianteEliminar,
+    EstudianteGuardar,
   }
-}
+};
+
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
