@@ -6,15 +6,15 @@
             </header>
             <nav></nav>
             <section>
-                <form class="form" action="http://www.google.com.ec">
+                <form class="form">
                     <h2>Estudiante</h2>
                     <p type="Nombre:"><input type="text"></p>
                     <p type="Apellido:"><input type="text"></p>
                     <p type="Fecha nacimiento:"><input type="date"></p>
-                    <p type="Cedula:"><input type="text"></p>
+                    <p type="Cedula:"><input v-model="cedula" type="text"></p>
                     <p type="Genero:"><input type="text"></p>
                     <div class="boton">
-                        <button>Buscar</button>
+                        <button v-on:click="consultar">Buscar</button>
                         <button>Actualizar</button>
                     </div>
                 </form>
@@ -25,6 +25,23 @@
 </template>
 
 <script>
+import {obtenerPorCedulaAxiosFachada, actualizarFachada} from '../clients/clienteEstudiante.js'
+
+export default {
+    data() {
+        return {
+            cedula: null,
+        }
+    },
+
+    methods: {
+        async consultar() {
+            console.log(this.cedula);
+            const data = await obtenerPorCedulaAxiosFachada(this.cedula);
+            console.log(data);
+        }
+    }
+};
 </script>
 
 <style>

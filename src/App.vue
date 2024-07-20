@@ -1,20 +1,20 @@
 <template>
-  <!-- <EstudiantePage /> -->
+  <EstudiantePage />
   <!-- <EstudianteEliminar /> -->
-  <EstudianteGuardar />
+  <!-- <EstudianteGuardar /> -->
 </template>
 
 <script>
-// import EstudiantePage from "./pages/EstudiantePage.vue";
+import EstudiantePage from "./pages/EstudiantePage.vue";
 // import EstudianteEliminar from "./pages/EstudianteEliminar.vue";
-import EstudianteGuardar from "./pages/EstudianteGuardar.vue";
+// import EstudianteGuardar from "./pages/EstudianteGuardar.vue";
 
 export default {
   name: "App",
   components: {
-    // EstudiantePage,
+    EstudiantePage,
     // EstudianteEliminar,
-    EstudianteGuardar,
+    // EstudianteGuardar,
   }
 };
 
