@@ -2,14 +2,13 @@ import axios from "axios";
 
 // Metodos de consumo del API
 const obtenerPorCedula = async (cedula) => {
-
-    const data = await fetch(`http://localhost:8080/API/v1.0/Matricula/estudiantes/cedula/${cedula}`).then(r => r.json());
+    const data = axios.get(`http://localhost:8080/API/v1.0/Matricula/estudiantes/cedula/${cedula}`).then(r => r.json());
     console.log(data);
     return data;
 }
 
 const obtenerPorCedulaAxios = async (cedula) => {
-    const data = await fetch(`http://localhost:8080/API/v1.0/Matricula/estudiantes/cedula/${cedula}`).then(r => r.data());
+    const data = axios.get(`http://localhost:8080/API/v1.0/Matricula/estudiantes/web/${cedula}`).then(r => r.data);
     console.log(data);
     return data;
 }
@@ -20,7 +19,7 @@ const guardar = async (estudianteBody) => {
 }
 
 const actualizar = async (cedula, estudianteBody) => {
-    axios.put(`http://localhost:8080/API/v1.0/Matricula/estudiantes/${cedula}`, estudianteBody).then(r => r.data);
+    const data = axios.put(`http://localhost:8080/API/v1.0/Matricula/estudiantes/web/${cedula}`, estudianteBody).then(r => r.data);
     console.log(data);
     return data;
 }
@@ -40,7 +39,6 @@ const eliminar = async (cedula) => {
 
 
 // Metodos de fachada
-
 export const obtenerPorCedulaFachada = async (cedula) => {
     return await obtenerPorCedula(cedula);
 }
