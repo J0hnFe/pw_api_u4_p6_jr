@@ -1,25 +1,22 @@
 <template>
+  <NavBar />
   <!-- <BienvenidaaPage /> -->
   <router-view />
   <!-- <EstudiantePage /> -->
   <!-- <EstudianteEliminar /> -->
   <!-- <EstudianteGuardar /> -->
 </template>
-
 <script>
-import BienvenidaaPage from "./pages/BienvenidaPage.vue";
-// import EstudiantePage from "./pages/EstudiantePage.vue";
-// import EstudianteEliminar from "./pages/EstudianteEliminar.vue";
-// import EstudianteGuardar from "./pages/EstudianteGuardar.vue";
 
+
+import NavBar from "../src/components/NavBar.vue";
 export default {
+
   name: "App",
   components: {
-    BienvenidaaPage,
-    // EstudiantePage,
-    // EstudianteEliminar,
-    // EstudianteGuardar,
+    NavBar,
   }
+
 };
 
 </script>

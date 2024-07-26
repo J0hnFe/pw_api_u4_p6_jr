@@ -9,8 +9,9 @@ const obtenerPorCedula = async (cedula) => {
 }
 
 const obtenerPorCedulaAxios = async (cedula) => {
-    const data = await fetch(`http://localhost:8080/API/v1.0/Matricula/estudiantes/cedula/${cedula}`).then(r => r.data());
+    const data = await fetch(`http://localhost:8080/API/v1.0/Matricula/cedula/${cedula}`).then(r => r.data());
     console.log(data);
+
     return data;
 }
 
