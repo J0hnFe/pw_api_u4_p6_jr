@@ -6,13 +6,11 @@
             </header>
             <nav></nav>
             <section>
-                <form class="form" action="http://www.google.com.ec">
-                    <h2>Eliminar estudiante</h2>
-                    <p type="Cedula:"><input type="text"></p>
-                    <div class="boton">
-                        <button>Eliminar</button>
-                    </div>
-                </form>
+                <h2>Eliminar estudiante</h2>
+                <p type="Cedula:"><input type="text"></p>
+                <div class="boton">
+                    <button>Eliminar</button>
+                </div>
             </section>
             <footer></footer>
         </div>

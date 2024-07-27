@@ -6,18 +6,16 @@
             </header>
             <nav></nav>
             <section>
-                <form class="form">
-                    <h2>Estudiante</h2>
-                    <p type="Nombre:"><input type="text"></p>
-                    <p type="Apellido:"><input type="text"></p>
-                    <p type="Fecha nacimiento:"><input type="date"></p>
-                    <p type="Cedula:"><input v-model="cedula" type="text"></p>
-                    <p type="Genero:"><input type="text"></p>
-                    <div class="boton">
-                        <button v-on:click="consultar">Buscar</button>
-                        <button>Actualizar</button>
-                    </div>
-                </form>
+                <h2>Estudiante</h2>
+                <p type="Nombre:"><input type="text"></p>
+                <p type="Apellido:"><input type="text"></p>
+                <p type="Fecha nacimiento:"><input type="date"></p>
+                <p type="Cedula:"><input v-model="cedula" type="text"></p>
+                <p type="Genero:"><input type="text"></p>
+                <div class="boton">
+                    <button v-on:click="consultar">Buscar</button>
+                    <button>Actualizar</button>
+                </div>
             </section>
             <footer></footer>
         </div>
@@ -25,7 +23,7 @@
 </template>
 
 <script>
-import {obtenerPorCedulaAxiosFachada, actualizarFachada} from '../clients/clienteEstudiante.js'
+import { obtenerPorCedulaAxiosFachada, actualizarFachada } from '../clients/clienteEstudiante.js'
 
 export default {
     data() {

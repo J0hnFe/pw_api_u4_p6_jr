@@ -6,17 +6,15 @@
             </header>
             <nav></nav>
             <section>
-                <form class="form" action="http://www.google.com.ec">
-                    <h2>Nuevo estudiante</h2>
-                    <p type="Nombre:"><input type="text"></p>
-                    <p type="Apellido:"><input type="text"></p>
-                    <p type="Fecha nacimiento:"><input type="date"></p>
-                    <p type="Cedula:"><input type="text"></p>
-                    <p type="Genero:"><input type="text"></p>
-                    <div class="boton">
-                        <button>Guardar</button>
-                    </div>
-                </form>
+                <h2>Nuevo estudiante</h2>
+                <p type="Nombre:"><input type="text"></p>
+                <p type="Apellido:"><input type="text"></p>
+                <p type="Fecha nacimiento:"><input type="date"></p>
+                <p type="Cedula:"><input type="text"></p>
+                <p type="Genero:"><input type="text"></p>
+                <div class="boton">
+                    <button>Guardar</button>
+                </div>
             </section>
             <footer></footer>
         </div>
